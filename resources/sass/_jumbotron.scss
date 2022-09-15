@@ -1,4 +1,23 @@
 #jumbotron {
-    height: 350px;
+    height: 420px;
     background-image: url("../images/jumbotron.jpg");
+
+    .container {
+        position: relative;
+        height: 100%;
+    }
+
+
+    button {
+        border: none;
+        position: absolute;
+        bottom: -25px;
+
+        height: 50px;
+        width: 250px;
+        background-color: $main_blue;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
