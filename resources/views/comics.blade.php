@@ -13,7 +13,20 @@
     @include('includes.jumbotron')
     <main>
         <section class="container">
-
+            <div class="row">
+                <ul class="comic-cards-section">
+                    @foreach($comics as $comic)
+                    <li>
+                        <div class="card">
+                            <figure>
+                                <img :src="{{$comic['thumb']}}" :alt="">
+                            </figure>
+                            <p>{{$comic['title']}}</p>
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
         </section>
     </main>
     @include('includes.footer')

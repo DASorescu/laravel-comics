@@ -1,0 +1,47 @@
+main {
+    background-color: $main_bg;
+
+    .row {
+        flex-wrap: wrap;
+
+        .col {
+            flex-basis: calc(100% /6);
+        }
+    }
+
+    .comic-cards-section {
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            flex-basis: 15%;
+            height: 100%;
+        }
+    }
+
+    .card {
+        height: 80%;
+        width: 100%;
+        padding: 0.5rem;
+
+
+        img {
+            max-width: 100%;
+            height: 35px;
+            display: block;
+            margin: 0%;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: start;
+            color: #fff;
+        }
+    }
+}
