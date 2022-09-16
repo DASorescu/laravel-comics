@@ -11,14 +11,15 @@
     <div class="info-content">
         <h2>{{$comic['title']}}</h2>
         <div class="availability">
-            <div class="price"></div>
-            <div class="status"></div>
-            <div class="check"></div>
+            <div class="price">U.S.Price : <span>{{$comic['price']}}</span></div>
+            <div class="status">AVAILABLE</div>
+            <div class="check">Check Availability</div>
         </div>
-        <p></p>
+        <p>{{$comic['description']}}</p>
     </div>
     <figure>
-        <img src="" alt="">
+        <p>ADVERTISMENT</p>
+        <img src="../images/madv.jpg" alt="adv">
     </figure>
 </div>
 </section>

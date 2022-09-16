@@ -7,7 +7,7 @@
         background-color: #0082F9;
 
         .image-container {
-            max-width: 1200px;
+            max-width: 900px;
             height: 100%;
             margin: 0 auto;
             position: relative;
@@ -23,25 +23,86 @@
     }
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 900px;
         margin: 0 auto;
         display: flex;
         color: #00407b;
+        padding-top: 30px;
 
         .info-content {
-            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
             flex-basis: 70%;
+
+            h2 {
+                margin: 2rem 0;
+            }
+
+            p {
+                margin: 2rem 0;
+                width: 95%;
+                color: #666;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 20px;
+            }
+
         }
 
         .availability {
-            flex-basis: 80%;
-            height: 30px;
-            background-color: rgb(91, 140, 17);
-            color: greenyellow;
+            width: 95%;
+            height: 50px;
+            background-color: #54BA58;
+            color: #99E87E;
+            display: flex;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+
+            .price {
+                padding-left: 1rem;
+                line-height: 50px;
+                flex-grow: 1;
+
+                span {
+                    color: #fff;
+                }
+            }
+
+            .status {
+                text-align: center;
+                line-height: 50px;
+                flex-basis: 20%;
+                border-right: 1px solid #000;
+            }
+
+            .check {
+                text-align: center;
+                line-height: 50px;
+                flex-basis: 30%;
+                color: #fff;
+
+            }
         }
 
         figure {
+
             flex-basis: 30%;
+            text-align: end;
+
+            p {
+                color: #666;
+                margin-top: 2rem;
+                margin-bottom: 0%;
+                text-align: end;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }
