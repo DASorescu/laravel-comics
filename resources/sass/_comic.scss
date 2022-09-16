@@ -1,0 +1,47 @@
+#comic-info {
+    background-color: #fff;
+
+    .blue-banner {
+
+        height: 70px;
+        background-color: #0082F9;
+
+        .image-container {
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            border: 1px solid #fff;
+        }
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        color: #00407b;
+
+        .info-content {
+            text-align: center;
+            flex-basis: 70%;
+        }
+
+        .availability {
+            flex-basis: 80%;
+            height: 30px;
+            background-color: rgb(91, 140, 17);
+            color: greenyellow;
+        }
+
+        figure {
+            flex-basis: 30%;
+        }
+    }
+}
