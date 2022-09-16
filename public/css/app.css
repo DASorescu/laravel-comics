@@ -36,6 +36,7 @@ header ul {
   padding: 0 2rem;
 }
 header ul li {
+  border-bottom: 2px solid transparent;
   flex-basis: 10%;
   list-style-type: none;
   text-align: center;
@@ -44,9 +45,13 @@ header ul li {
   vertical-align: middle;
   margin: 0 5px;
 }
+header ul li.active {
+  border-bottom: 2px solid #0082F9;
+}
 header ul li a {
   text-decoration: none;
   color: #464646;
+  font-weight: bold;
 }
 header input {
   width: 15%;
@@ -79,6 +84,7 @@ main {
   background-color: #1C1C1C;
 }
 main .row {
+  padding-top: 50px;
   flex-wrap: wrap;
 }
 main .row .col {
@@ -105,7 +111,6 @@ main .card {
 }
 main .card img {
   max-width: 100%;
-  height: 35px;
   display: block;
   margin: 0%;
 }
@@ -113,6 +118,46 @@ main .card p {
   font-size: 15px;
   text-align: start;
   color: #fff;
+}
+main .button-section {
+  display: flex;
+  justify-content: center;
+}
+main .button-section button {
+  background-color: #0082F9;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  border-width: 0;
+  border-style: none;
+  border-color: #0082F9;
+  -o-border-image: none;
+     border-image: none;
+  margin-bottom: 50px;
+}
+main .banner {
+  padding: 2rem;
+  background-color: #0082F9;
+  color: #fff;
+  height: 50%;
+}
+main .banner .container {
+  height: 100%;
+}
+main .banner .container ul {
+  display: flex;
+  margin-top: 0%;
+  padding-left: 0%;
+  justify-content: space-between;
+  margin-bottom: 0%;
+}
+main .banner .container ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+main .banner .container ul li img {
+  height: 50px;
 }
 
 .top-footer {
@@ -133,6 +178,7 @@ main .card p {
   background-position: center;
 }
 .top-footer .footer-list {
+  padding-top: 30px;
   flex-basis: 40%;
   display: flex;
   flex-wrap: wrap;

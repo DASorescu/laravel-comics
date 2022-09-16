@@ -1,15 +1,15 @@
 <?php
 return[
-    ['text'=>'character','route_name'=>'characters'],
-    ['text'=>'comics','route_name'=>'comics'],
-    ['text'=>'movies','route_name'=>'movies'],
-    ['text'=>'tv','route_name'=>'tv'],
-    ['text'=>'games','route_name'=>'games'],
-    ['text'=>'colectibles','route_name'=>'colectibles'],
-    ['text'=>'videos','route_name'=>'videos'],
-    ['text'=>'fans','route_name'=>'fans'],
-    ['text'=>'news','route_name'=>'news'],
-    ['text'=>'shop','route_name'=>'shop'],
+    ['text'=>'CHARACTERS','route_name'=>'characters'],
+    ['text'=>'COMICS','route_name'=>'comics'],
+    ['text'=>'MOVIES','route_name'=>'movies'],
+    ['text'=>'TV','route_name'=>'tv'],
+    ['text'=>'GAMES','route_name'=>'games'],
+    ['text'=>'COLECTIBLES','route_name'=>'colectibles'],
+    ['text'=>'VIDEOS','route_name'=>'videos'],
+    ['text'=>'FANS','route_name'=>'fans'],
+    ['text'=>'NEWS','route_name'=>'news'],
+    ['text'=>'SHOP','route_name'=>'shop'],
     
     ]
 ?>
