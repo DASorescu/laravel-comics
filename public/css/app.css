@@ -46,9 +46,13 @@ header ul li {
   margin: 0 5px;
 }
 header ul li.active {
-  border-bottom: 2px solid #0082F9;
+  border-bottom: 3px solid #0082F9;
+}
+header ul li:hover {
+  cursor: pointer;
 }
 header ul li a {
+  height: 100px;
   text-decoration: none;
   color: #464646;
   font-weight: bold;
@@ -65,23 +69,26 @@ header input {
   background-image: url("../images/jumbotron.jpg");
 }
 #jumbotron .container {
-  position: relative;
   height: 100%;
 }
-#jumbotron button {
+
+main {
+  background-color: #1C1C1C;
+}
+main .container {
+  position: relative;
+}
+main .container .current-series {
   border: none;
   position: absolute;
-  bottom: -25px;
+  top: -25px;
+  left: 0%;
   height: 50px;
   width: 250px;
   background-color: #0082F9;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-}
-
-main {
-  background-color: #1C1C1C;
 }
 main .row {
   padding-top: 50px;
@@ -246,4 +253,44 @@ main .banner .container ul li img {
 }
 .bottom-footer .social .social-icons img {
   flex-basis: 10%;
+}
+
+#comic-info {
+  background-color: #fff;
+}
+#comic-info .blue-banner {
+  height: 70px;
+  background-color: #0082F9;
+}
+#comic-info .blue-banner .image-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#comic-info .blue-banner img {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  border: 1px solid #fff;
+}
+#comic-info .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  color: #00407b;
+}
+#comic-info .wrapper .info-content {
+  text-align: center;
+  flex-basis: 70%;
+}
+#comic-info .wrapper .availability {
+  flex-basis: 80%;
+  height: 30px;
+  background-color: rgb(91, 140, 17);
+  color: greenyellow;
+}
+#comic-info .wrapper figure {
+  flex-basis: 30%;
 }

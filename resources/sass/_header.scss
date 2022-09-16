@@ -35,11 +35,15 @@ header {
             margin: 0 5px;
 
             &.active {
-                border-bottom: 2px solid $main_blue;
+                border-bottom: 3px solid $main_blue;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
 
             a {
-
+                height: 100px;
                 text-decoration: none;
                 color: $main_font_color;
                 font-weight: bold;
