@@ -9,12 +9,15 @@
         <ul class="comic-cards-section">
             @foreach($comics as $comic)
             <li>
-                <div class="card">
-                    <figure>
-                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-                    </figure>
-                    <p>{{$comic['title']}}</p>
-                </div>
+                <a href="{{route('comics.show' , ['id'=> $loop->index])}}">
+                    <div class="card">
+                        <figure>
+                            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                        </figure>
+                        <p>{{$comic['title']}}</p>
+                    </div>
+
+                </a>
             </li>
             @endforeach
         </ul>

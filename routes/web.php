@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('comics',['comics'=> $comics]);
-})->name('comics');
+    return view('comics.index',['comics'=> $comics]);
+})->name('comics.index');
 
 Route::get('/videos', function () {
     return view('pages.videos');
@@ -55,9 +55,13 @@ Route::get('/shop', function () {
     return view('pages.shop');
 })->name('shop');
 // todo ...
-Route::get('/comic', function () {
+Route::get('/comic/{id}', function ($id) {
     $comics = config('comics');
-    $comic = $comics[0];
-    return view('pages.comic',compact('comic'));
-})->name('comic');
+
+    if(!is_numeric($id) ||$id < 0 || $id >= count($comics)){
+        abort(404);
+    }
+    $comic = $comics[$id];
+    return view('comics.show',compact('comic'));
+})->name('comics.show');
     
